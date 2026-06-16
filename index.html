@@ -54,8 +54,8 @@
         <div class="header-info">
             <p><strong>📦 Proyecto:</strong> M1NUS5/cd-testing</p>
             <p><strong>🌿 Rama:</strong> main</p>
-            <p><strong>📝 Versión:</strong> 1.0 - Modificado</p>
-            <p><strong>⏱️ Estado:</strong> Ejecutando tests...</p>
+            <p><strong>📝 Versión:</strong> 1.1 - Corregido</p>
+            <p><strong>⏱️ Estado:</strong> ✅ Todos los tests pasando</p>
         </div>
         
         <div id="mocha"></div>
@@ -77,8 +77,9 @@
                     expect(5 - 3).to.equal(2);
                 });
 
-                it('debe multiplicar 3 * 3 y obtener 10', function() {
-                    expect(3 * 3).to.equal(10); // Esto va a fallar - debería ser 9
+                // TEST CORREGIDO ✅
+                it('debe multiplicar 3 * 3 y obtener 9', function() {
+                    expect(3 * 3).to.equal(9); // Corregido: ahora es 9
                 });
 
                 it('debe dividir 10 / 2 correctamente', function() {
